@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="surface">
       <h1>
         <figure class="logo"><img src="" alt="" /></figure>
         Hours Manager
       </h1>
     </header>
     <main>
-      <div class="container sidebar"></div>
-      <div class="container main">
+      <div class="container sidebar surface"></div>
+      <div class="container main background">
         <section id="inputSection">
           <div class="container" id="containerGroup">
             <label for="group">Choose the group: </label>
@@ -139,9 +139,20 @@
             <button>Add hours</button>
           </div>
         </section>
-        <section id="output"></section>
+        <section id="output">
+          <div class="container">
+            <div class="container hoursOutput">
+              <h2>Hours</h2>
+              <span class="output">1 hours</span>
+            </div>
+            <div class="container moneyOutput">
+              <h2>Money</h2>
+              <span class="output">€ 10</span>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
-    <footer></footer>
+    <footer class="surface"></footer>
   </body>
 </html>

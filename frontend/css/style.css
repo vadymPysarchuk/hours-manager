@@ -1,3 +1,20 @@
+/*#171720 · #242432 · #343448 · #9B8AFB · #F5F3FF*/
+:root {
+  --background-color: #171720;
+  --surface-color: #242432;
+  --hover-color: #343448;
+  --accent-color: #9b8afb;
+  --text-color: #f5f3ff;
+}
+* {
+  color: var(--text-color);
+}
+.background {
+  background-color: var(--background-color);
+}
+.surface {
+  background-color: var(--surface-color);
+}
 h1 {
   font-size: 2rem;
 }
@@ -12,6 +29,19 @@ h4 {
 }
 select {
   background-color: gray;
+  text-align: center;
+  border-radius: 1rem;
+  border: 1px solid black;
+  padding: 0.2rem;
+  width: fit-content;
+}
+input {
+  background-color: gray;
+  text-align: center;
+  border-radius: 1rem;
+  border: 1px solid black;
+  padding: 0.1rem;
+  width: fit-content;
 }
 button {
   text-align: center;
@@ -25,8 +55,7 @@ body {
 }
 header {
   padding: 0.5rem;
-  background-color: aqua;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid var(--hover-color);
 }
 header > h1 {
   display: grid;
@@ -34,10 +63,11 @@ header > h1 {
   grid-template-columns: 1fr 5fr;
   text-align: center;
 }
-header figure {
+header .logo {
   width: 3rem;
   height: 3rem;
-  background-color: brown;
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 main {
   height: 100%;
@@ -48,26 +78,27 @@ main {
 }
 .sidebar {
   padding: 0.5rem;
-  background-color: aqua;
+  border-right: solid 1px var(--hover-color);
 }
 .main {
   padding: 0.5rem;
-  background-color: aquamarine;
 }
 #inputSection {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "group date"
     "startHours endHours"
     "addButton addButton";
-  gap: 10px;
+  gap: 1.5rem;
   font-size: 1.2rem;
 }
 #inputSection > .container {
   min-height: 3rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 #containerGroup {
   grid-area: group;
@@ -88,12 +119,40 @@ main {
   width: 100%;
   height: 100%;
   margin: 0 20%;
-  background-color: azure;
+  background-color: var(--accent-color);
   min-height: 2rem;
+}
+#output {
+  margin-top: 4rem;
+}
+span.output {
+  font-size: 1.2rem;
+}
+#output > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#output > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--surface-color);
+  width: fit-content;
+  align-self: center;
+  justify-self: center;
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+#output > div > div > * {
+  width: fit-content;
 }
 footer {
   min-height: 4rem;
   background-color: aqua;
-  border-top: 1px solid blue;
+  border-top: 1px solid var(--hover-color);
   padding: 0.5rem;
 }
