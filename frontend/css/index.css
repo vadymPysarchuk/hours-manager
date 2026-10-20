@@ -1,0 +1,61 @@
+:root {
+  --background-color: #171720;
+  --surface-color: #242432;
+  --hover-color: #343448;
+  --accent-color: #9b8afb;
+  --text-color: #f5f3ff;
+}
+#inputSection {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "group date"
+    "startHours endHours"
+    "addButton addButton";
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+#containerGroup {
+  grid-area: group;
+}
+#containerDate {
+  grid-area: date;
+}
+#containerStartHours {
+  grid-area: startHours;
+}
+#containerEndHours {
+  grid-area: endHours;
+}
+#containerBtnAddHours {
+  grid-area: addButton;
+}
+#output {
+  margin-top: 4rem;
+}
+span.output {
+  font-size: 1.2rem;
+}
+#output > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#output > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--surface-color);
+  width: fit-content;
+  align-self: center;
+  justify-self: center;
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+#output > div > div > * {
+  width: fit-content;
+}

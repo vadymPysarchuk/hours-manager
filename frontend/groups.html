@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hours Manager</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/groups.css" />
+  </head>
+  <body>
+    <header class="surface">
+      <h1>
+        <figure class="logo"><img src="" alt="" /></figure>
+        Hours Manager
+      </h1>
+    </header>
+    <main>
+      <div class="container sidebar surface">
+        <div class="sidebarbutton">
+          <a href="index.html"><span class="sidebarBS">Hours</span></a>
+        </div>
+        <div class="sidebarbutton">
+          <a href="groups.html"><span class="sidebarBS">Groups</span></a>
+        </div>
+        <div class="sidebarbutton">
+          <a href="people.html"><span class="sidebarBS">People</span></a>
+        </div>
+      </div>
+      <div class="container main background">
+        <section id="inputSection">
+          <div class="container" id="containerGroup">
+            <label for="date">Group name:</label>
+            <input
+              type="text"
+              name="group"
+              id="group"
+              placeholder="Write group name"
+            />
+          </div>
+          <div class="container" id="containerBtnAddHours">
+            <button>Add group</button>
+          </div>
+        </section>
+        <section id="output"></section>
+      </div>
+    </main>
+  </body>
+</html>
