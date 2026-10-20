@@ -1,0 +1,28 @@
+#output {
+  margin-top: 4rem;
+}
+span.output {
+  font-size: 1.2rem;
+}
+#output > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#output > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--surface-color);
+  width: fit-content;
+  align-self: center;
+  justify-self: center;
+  padding: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+#output > div > div > * {
+  width: fit-content;
+}
