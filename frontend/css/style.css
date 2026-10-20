@@ -60,7 +60,7 @@ header {
 header > h1 {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 7fr;
   text-align: center;
 }
 header .logo {
@@ -74,11 +74,27 @@ main {
   flex-grow: 1;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 7fr;
 }
 .sidebar {
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-right: solid 1px var(--hover-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.sidebarbutton {
+  border-bottom: var(--hover-color) 1px solid;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.sidebarBS {
+  width: 100%;
+  font-size: 1.3rem;
 }
 .main {
   padding: 0.5rem;
